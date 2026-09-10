@@ -6,8 +6,8 @@ body {
     margin: 0;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    color: #222222;
-    background-color: #ffffff;
+    color: #060202;
+    background-color: #fbf8f8;
 }
 
 .container {
@@ -23,26 +23,29 @@ header {
 
 h1 {
     margin: 0 0 22px;
-    font-size: 32px;
-    font-weight: 700;
-    color: #173b2c;
+    font-size: 50px;
+    font-weight: 1000;
+    color: #d90000;
+    text-align: center;
 }
 
 nav {
     margin: 0;
-    padding: 0;
+    padding: 8px 8px;
+    text-align: center;
+    background-color: #000000;
 }
 
 nav a {
     margin-right: 22px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    color: #222222;
+    color: #f1ecec;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #c5482d;
+    color: #d90000;
 }
 
 main {
@@ -60,6 +63,7 @@ section {
     height: 420px;
     margin: 0 0 20px;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 h2 {
@@ -95,12 +99,18 @@ th {
     font-weight: 700;
 }
 
+.table-photo { 
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
 footer {
     margin: 0;
     padding: 24px 0;
     background-color: black;
     color: white;
 }
+
 
 footer p {
     margin: 0;
