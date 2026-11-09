@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Меню Vietnamese Station для сборки вьетнамского бизнес-ланча."
+    >
+    <title>Собрать ланч — Vietnamese Station</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin="anonymous"
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lunch.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>VIETNAMESE STATION</h1>
+            <nav class="main-nav">
+                <a href="index.html">О нас</a>
+                <a class="active" href="lunch.html">Собрать ланч</a>
+                <a href="orders.html">Заказы</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="menu-section">
+            <h2>Супы</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <img
+                        src="images/phobo.jpeg"
+                        alt="Фо бо с говядиной и зеленью"
+                        width="600"
+                        height="400"
+                    >
+                    <p class="dish-price">750 ₽</p>
+                    <p class="dish-name">Фо бо</p>
+                    <p class="dish-weight">450 мл</p>
+                    <button class="add-button" type="button">
+                        Добавить
+                    </button>
+                </div>
+                <div class="dish-card">
+                    <img
+                        src="images/comga.jpeg"
+                        alt="Фо га с курицей и рисовой лапшой"
+                        width="600"
+                        height="400"
+                    >
+                    <p class="dish-price">700 ₽</p>
+                    <p class="dish-name">Фо га</p>
+                    <p class="dish-weight">450 мл</p>
+                    <button class="add-button" type="button">
+                        Добавить
+                    </button>
+                </div>
+                <div class="dish-card">
+                    <img
+                        src="images/canhchua.jpeg"
+                        alt="Вьетнамский кислый суп кань чуа"
+                        width="600"
+                        height="400"
+                    >
+                    <p class="dish-price">680 ₽</p>
+                    <p class="dish-name">Кань чуа</p>
+                    <p class="dish-weight">420 мл</p>
+                    <button class="add-button" type="button">
+                        Добавить
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="menu-section">
+            <h2>Главные блюда</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <img
+                        src="images/buncha.jpg"
+                        alt="Бун ча с жареной свининой и рисовой лапшой"
+                        width="600"
+                        height="400"
+                    >
+                    <p class="dish-price">700 ₽</p>
+                    <p class="dish-name">Бун ча</p>
+                    <p class="dish-weight">380 г</p>
+                    <button class="add-button" type="button">
+                        Добавить
+                    </button>
+                </div>
+                <div class="dish-card">
+                    <img
+                        src="images/comga.jpeg"
+                        alt="Ком га с курицей и рисом"
+                        width="600"
+                        height="400"
+                    >
+                    <p class="dish-price">700 ₽</p>
+                    <p class="dish-name">Ком га</p>
+                    <p class="dish-weight">400 г</p>
+                    <button class="add-button" type="button">
+                        Добавить
+                    </button>
+                </div>
+                <div class="dish-card">
+                    <img
+                        src="images/nemran.jpg"
+                        alt="Вьетнамские жареные спринг-роллы нэм ран"
+                        width="600"
+                        height="400"
+                    >
+                    <p class="dish-price">600 ₽</p>
+                    <p class="dish-name">Нэм ран</p>
+                    <p class="dish-weight">300 г</p>
+                    <button class="add-button" type="button">
+                        Добавить
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="menu-section">
+            <h2>Напитки</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <img
+                        src="images/caphe.jpg"
+                        alt="Вьетнамский кофе со сгущённым молоком и льдом"
+                        width="600"
+                        height="400"
+                    >
+                    <p class="dish-price">250 ₽</p>
+                    <p class="dish-name">Кофе со льдом</p>
+                    <p class="dish-weight">300 мл</p>
+                    <button class="add-button" type="button">
+                        Добавить
+                    </button>
+                </div>
+                <div class="dish-card">
+                    <img
+                        src="images/trachanh.jpg"
+                        alt="Холодный чай с лимоном"
+                        width="600"
+                        height="400"
+                    >
+                    <p class="dish-price">220 ₽</p>
+                    <p class="dish-name">Чай с лимоном</p>
+                    <p class="dish-weight">400 мл</p>
+                    <button class="add-button" type="button">
+                        Добавить
+                    </button>
+                </div>
+                <div class="dish-card">
+                    <img
+                        src="images/xoai.jpg"
+                        alt="Манговый смузи"
+                        width="600"
+                        height="400"
+                    >
+                    <p class="dish-price">300 ₽</p>
+                    <p class="dish-name">Манговый смузи</p>
+                    <p class="dish-weight">400 мл</p>
+                    <button class="add-button" type="button">
+                        Добавить
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="order-section container">
+        <h2>Оформить заказ</h2>
+
+        <form
+            class="order-form"
+            action="https://httpbin.org/post"
+            method="post"
+        >
+            <div class="form-column">
+                <h3>Ваш заказ</h3>
+
+                <div class="form-group">
+                    <label for="soup">Суп</label>
+                    <select id="soup" name="soup" required>
+                        <option value="" selected>
+                            Выберите суп
+                        </option>
+                        <option value="pho_bo">Фо бо</option>
+                        <option value="pho_ga">Фо га</option>
+                        <option value="canh_chua">Кань чуа</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="main-course">Главное блюдо</label>
+                    <select
+                        id="main-course"
+                        name="main_course"
+                        required
+                    >
+                        <option value="" selected>
+                            Выберите главное блюдо
+                        </option>
+                        <option value="bun_cha">Бун ча</option>
+                        <option value="com_ga">Ком га</option>
+                        <option value="nem_ran">Нэм ран</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="drink">Напиток</label>
+                    <select id="drink" name="drink" required>
+                        <option value="" selected>
+                            Выберите напиток
+                        </option>
+                        <option value="iced_coffee">
+                            Кофе со льдом
+                        </option>
+                        <option value="lemon_tea">
+                            Чай с лимоном
+                        </option>
+                        <option value="mango_smoothie">
+                            Манговый смузи
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">Комментарий к заказу</label>
+                    <textarea
+                        id="comment"
+                        name="comment"
+                        rows="6"
+                        placeholder="Ваши пожелания к заказу"
+                    ></textarea>
+                </div>
+            </div>
+
+            <div class="form-column">
+                <h3>Ваши данные</h3>
+
+                <div class="form-group">
+                    <label for="customer-name">Имя</label>
+                    <input
+                        id="customer-name"
+                        name="customer_name"
+                        type="text"
+                        placeholder="Введите имя"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-email">Email</label>
+                    <input
+                        id="customer-email"
+                        name="email"
+                        type="email"
+                        placeholder="example@mail.ru"
+                        required
+                    >
+                </div>
+
+                <div class="checkbox-group">
+                    <input
+                        id="subscribe"
+                        name="subscribe"
+                        type="checkbox"
+                        value="yes"
+                        checked
+                    >
+                    <label for="subscribe">
+                        Получать информацию о скидках и акциях
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-phone">Телефон</label>
+                    <input
+                        id="customer-phone"
+                        name="phone"
+                        type="tel"
+                        placeholder="+7 999 123-45-67"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="delivery-address">
+                        Адрес доставки
+                    </label>
+                    <input
+                        id="delivery-address"
+                        name="address"
+                        type="text"
+                        placeholder="Улица, дом, квартира"
+                        required
+                    >
+                </div>
+
+                <fieldset class="delivery-fieldset">
+                    <legend>Время доставки</legend>
+
+                    <div class="radio-option">
+                        <input
+                            id="delivery-asap"
+                            name="delivery_option"
+                            type="radio"
+                            value="asap"
+                            required
+                        >
+                        <label for="delivery-asap">
+                            Как можно скорее
+                        </label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input
+                            id="delivery-by-time"
+                            name="delivery_option"
+                            type="radio"
+                            value="by_time"
+                            required
+                        >
+                        <label for="delivery-by-time">
+                            К указанному времени
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="delivery-time">
+                        Укажите время доставки
+                    </label>
+                    <input
+                        id="delivery-time"
+                        name="delivery_time"
+                        type="time"
+                        min="07:00"
+                        max="23:00"
+                        step="300"
+                    >
+                    <p class="form-note">
+                        Доступное время доставки: с 07:00 до 23:00, шаг — 5 минут.
+                    </p>
+                </div>
+
+                <div class="form-actions">
+                    <button type="reset">
+                        Сбросить
+                    </button>
+                    <button
+                        class="submit-button"
+                        type="submit"
+                    >
+                        Отправить
+                    </button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer id="contacts">
+        <div class="container">
+            <p>
+                Позвонить нам:
+                <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

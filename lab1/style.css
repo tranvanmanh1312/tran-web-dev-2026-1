@@ -3,7 +3,10 @@
 }
 
 body {
+    min-height: 100vh;
     margin: 0;
+    display: flex;
+    flex-direction: column;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     color: #020202;
@@ -17,7 +20,8 @@ body {
     padding: 0;
 }
 
-.header {
+.header,
+.site-header {
     margin: 0;
     padding: 36px 0 30px;
 }
@@ -26,34 +30,39 @@ h1 {
     margin: 0 0 24px;
     font-size: 50px;
     font-weight: 700;
-    color: #f6dd00;
+    color: #ffffff;
     text-align: center;
-    background-color: #f50303;
+    background-color: tomato;
     border-radius: 10px;
 }
 
 .main-nav {
     margin: 0;
-    padding: 8px 8px;
-    text-align: center;
+    padding: 8px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
     background-color: #000000;
     border-radius: 10px;
+    text-align: center;
 }
 
 .main-nav a {
-    margin-right: 24px;
     font-family: "Roboto", sans-serif;
     font-size: 19px;
     font-weight: 100;
     color: #f7f0f0;
     text-decoration: none;
+    text-align: center;
 }
 
-.main-nav a:hover {
-    color: #f82904;
+.main-nav a:hover,
+.main-nav a.active {
+    color: tomato;
 }
 
 main {
+    flex: 1;
     margin: 0 auto;
     padding: 0 0 35px;
 }
@@ -74,10 +83,11 @@ h2 {
     margin: 0 0 14px;
     font-size: 28px;
     font-weight: 700;
-    color: #2d4c54;
+    color: #333333;
 }
 
-p,li {
+p,
+li {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     color: #202020;
@@ -106,62 +116,40 @@ table {
     text-align: center;
 }
 
-th,td {
+th,
+td {
     padding: 10px 12px;
     border: 1px solid #555555;
 }
 
 th {
     font-weight: 700;
-    background-color: #e5c19f;
+    background-color: #eeeeee;
 }
 
 footer {
     margin: 0;
     padding: 24px 0;
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 footer p {
-    color: white;
+    color: #ffffff;
 }
 
 footer a {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #f0b35a;
+    color: tomato;
 }
 
 .secondary-page {
     min-height: 360px;
     padding-top: 30px;
-}
-
-@media (max-width: 600px) {
-    .site-header {
-        padding-top: 26px;
-    }
-
-    .main-nav a {
-        display: block;
-        margin: 0 0 10px;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    th,td {
-        padding: 8px;
-    }
 }

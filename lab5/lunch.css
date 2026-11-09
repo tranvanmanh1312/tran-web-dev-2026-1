@@ -1,0 +1,117 @@
+.filters {
+    margin: 0 0 18px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filters button {
+    padding: 8px 16px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #202020;
+    background-color: #f1eee9;
+    border: 1px solid #bbbbbb;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.filters button:hover,
+.filters button.active {
+    color: #ffffff;
+    background-color: tomato;
+    border-color: tomato;
+}
+
+.menu-section h2 {
+    margin-bottom: 18px;
+}
+
+.dishes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.dish-card {
+    min-width: 0;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 35px;
+    cursor: pointer;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+}
+
+.dish-card:hover,
+.dish-card.selected {
+    border-color: tomato;
+}
+
+.dish-card:hover .add-button {
+    color: #ffffff;
+    background-color: tomato;
+}
+
+.dish-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 35px;
+}
+
+.dish-price {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dish-name {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.dish-weight {
+    margin-top: auto;
+    padding-top: 12px;
+    color: #777777;
+}
+
+.add-button {
+    margin-top: 10px;
+    padding: 10px 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #202020;
+    background-color: #f1eee9;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .dishes-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-section h2 {
+        text-align: center;
+    }
+
+    .dishes-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .filters {
+        justify-content: center;
+    }
+}
